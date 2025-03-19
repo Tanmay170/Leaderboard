@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import { Card, CardContent } from "../components/ui/card.jsx";
-import { Progress } from "../components/ui/progress.jsx";
+import { Card, CardContent } from "./ui/card.jsx";
+import { Progress } from "./ui/progress.jsx";
 import { motion } from "framer-motion";
 import { Trophy, User } from "lucide-react";
 
