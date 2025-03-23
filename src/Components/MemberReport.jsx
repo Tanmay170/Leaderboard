@@ -23,7 +23,7 @@ const MemberReport = () => {
         initial={{ opacity: 0, y: -10 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        {member.name}'s Report
+        {member.name}'s Profile
       </motion.h1>
       <div className="bg-gray-100 p-6 rounded-lg shadow-lg w-full max-w-4xl">
         <div className="flex items-center gap-6">
