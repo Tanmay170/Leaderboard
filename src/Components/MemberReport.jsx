@@ -1,5 +1,5 @@
 import React from "react";
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
@@ -85,6 +85,17 @@ const MemberReport = () => {
             ))}
           </ul>
         </div>
+
+        {/* Attendance Report Link */}
+        <div className="mt-6 flex justify-center">
+          <Link 
+            to={`/member/${member.id}/attendance`} 
+            className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-500 transition"
+          >
+            View Attendance Report
+          </Link>
+        </div>
+
       </div>
     </div>
   );
