@@ -38,7 +38,7 @@ export const membersData = [
     {
       id: 3,
       name: "Aksh",
-      domain: "Nothing",
+      domain: "Web Development",
       year: "1st",
       registrationNumber: "789012",
       department: "Computer Science",
