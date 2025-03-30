@@ -7,7 +7,7 @@ export const membersData = [
       registrationNumber: "123456",
       department: "ECE",
       membershipId: "MEM001",
-      profileImage: "/public/P2.jpg", // Public folder
+      profileImage: "/P2.jpg", // Fixed path (No "public/")
       github: "https://github.com/alicejohnson",
       linkedin: "https://linkedin.com/in/alicejohnson",
       tasksCompleted: 5,
@@ -25,7 +25,7 @@ export const membersData = [
       registrationNumber: "654321",
       department: "IT",
       membershipId: "MEM002",
-      profileImage: "/public/Aksh.jpg",
+      profileImage: "/Aksh.jpg",
       github: "https://github.com/bobsmith",
       linkedin: "https://linkedin.com/in/bobsmith",
       tasksCompleted: 4,
@@ -43,7 +43,7 @@ export const membersData = [
       registrationNumber: "789012",
       department: "Computer Science",
       membershipId: "MEM003",
-      profileImage: "/public/yasha.jpg",
+      profileImage: "/yasha.jpg",
       github: "https://github.com/charliebrown",
       linkedin: "https://linkedin.com/in/charliebrown",
       tasksCompleted: 3,
@@ -61,7 +61,7 @@ export const membersData = [
       registrationNumber: "345678",
       department: "CSE",
       membershipId: "MEM004",
-      profileImage: "/public/zahra.jpg",
+      profileImage: "/zahra.jpg",
       github: "https://github.com/daisycarter",
       linkedin: "https://linkedin.com/in/daisycarter",
       tasksCompleted: 4,
@@ -71,5 +71,4 @@ export const membersData = [
       points: 90,
       projects: ["Data Visualization Dashboard"],
     }
-  ];
-  
+];

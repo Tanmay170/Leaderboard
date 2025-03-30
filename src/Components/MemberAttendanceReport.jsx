@@ -2,15 +2,16 @@ import React, { useRef } from "react";
 import { useParams } from "react-router-dom";
 import { Pie, Line } from "react-chartjs-2";
 import { Chart as ChartJS, ArcElement, Tooltip, Legend, CategoryScale, LinearScale, PointElement, LineElement } from "chart.js";
-import membersData from "../data/AttendanceData";
+import AttendanceData from "../data/AttendanceData";
 import html2canvas from "html2canvas";
 import jsPDF from "jspdf";
 import { FaTrophy } from "react-icons/fa";
 ChartJS.register(ArcElement, Tooltip, Legend, CategoryScale, LinearScale, PointElement, LineElement);
 
 const MemberAttendanceReport = () => {
-  const { memberId } = useParams();
-  const member = membersData.find((m) => m.id === parseInt(memberId));
+  const { id } = useParams(); // Change `memberId` to `id`
+  const member = AttendanceData.find((m) => Number(m.id) === Number(id));
+  
   const reportRef = useRef();
 
   if (!member) {

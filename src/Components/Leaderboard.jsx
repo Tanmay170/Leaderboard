@@ -82,7 +82,7 @@ const Leaderboard = () => {
                   </td>
                   <td className="p-4">
                     <button
-                      onClick={() => navigate(`/member-report/${member.id}`)}
+                      onClick={() => navigate(`/member/${member.id}`)}
                       className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition"
                     >
                       View Report

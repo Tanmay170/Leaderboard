@@ -1,5 +1,5 @@
 import React from "react";
-import { useParams, Link } from "react-router-dom";
+import { useParams, Link, useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
@@ -8,7 +8,10 @@ import { membersData } from "../data/membersData";
 
 const MemberReport = () => {
   const { id } = useParams();
-  const member = membersData.find((m) => m.id === parseInt(id));
+  const navigate = useNavigate();
+
+  // Fix: Ensure `id` is converted to a number
+  const member = membersData.find((m) => Number(m.id) === Number(id));
 
   if (!member) {
     return <div className="text-red-500 text-center mt-10">Member not found!</div>;
@@ -88,12 +91,12 @@ const MemberReport = () => {
 
         {/* Attendance Report Link */}
         <div className="mt-6 flex justify-center">
-          <Link 
-            to={`/member/${member.id}/attendance`} 
+          <button
             className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-500 transition"
+            onClick={() => navigate(`/member/${member.id}/attendance`)}
           >
             View Attendance Report
-          </Link>
+          </button> 
         </div>
 
       </div>

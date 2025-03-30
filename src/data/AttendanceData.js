@@ -1,4 +1,4 @@
-const membersData = [
+const AttendanceData = [
   {
     id: 1,
     name: "Rahul",
@@ -80,4 +80,4 @@ const membersData = [
   },
 ];
 
-export default membersData;
+export default AttendanceData;
